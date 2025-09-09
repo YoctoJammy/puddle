@@ -1,15 +1,15 @@
-# Ocean
+# Puddle
 
-Ocean is a C++ framework for Computer Vision (CV) And Augmented Reality (AR) Applications.
+Puddle is a small subset of [Ocean](https://facebookresearch.github.io/ocean/), a C++ library for computer vision.  Puddle is intended for use in benchmarking select features of Ocean to compare against other libraries.  Its goal is to reduce the amount of time and disk space used in building the subset of Ocean features.
 
-[![Build Third-party libraries on Linux (static)](https://github.com/facebookresearch/ocean/actions/workflows/build_thirdparty_linux.yml/badge.svg)](https://github.com/facebookresearch/ocean/actions/workflows/build_thirdparty_linux.yml)
-[![Build Ocean on Linux (static)](https://github.com/facebookresearch/ocean/actions/workflows/build_ocean_linux.yml/badge.svg)](https://github.com/facebookresearch/ocean/actions/workflows/build_ocean_linux.yml)
-[![Test Ocean on Linux (static)](https://github.com/facebookresearch/ocean/actions/workflows/test_ocean_linux.yml/badge.svg)](https://github.com/facebookresearch/ocean/actions/workflows/test_ocean_linux.yml)
-[![Build and deploy website](https://github.com/facebookresearch/ocean/actions/workflows/build_and_deploy_website.yml/badge.svg)](https://github.com/facebookresearch/ocean/actions/workflows/build_and_deploy_website.yml)
+[![Build Third-party libraries on Linux (static)](https://github.com/RamenEggs/puddle/actions/workflows/build_thirdparty_linux.yml/badge.svg)](https://github.com/RamenEggs/puddle/actions/workflows/build_thirdparty_linux.yml)
+[![Build Ocean on Linux (static)](https://github.com/RamenEggs/puddle/actions/workflows/build_ocean_linux.yml/badge.svg)](https://github.com/RamenEggs/puddle/actions/workflows/build_ocean_linux.yml)
+[![Test Ocean on Linux (static)](https://github.com/RamenEggs/puddle/actions/workflows/test_ocean_linux.yml/badge.svg)](https://github.com/RamenEggs/puddle/actions/workflows/test_ocean_linux.yml)
+[![Build and deploy website](https://github.com/RamenEggs/puddle/actions/workflows/build_and_deploy_website.yml/badge.svg)](https://github.com/RamenEggs/puddle/actions/workflows/build_and_deploy_website.yml)
 
 # Contributing
 
-Please read the [contribution guidelines](CONTRIBUTING.md) before submitting any code changes.
+Puddle is not intended for general consumption.  There are no plans to accept pull requests.  Please make contributions to [Ocean](https://github.com/facebookresearch/ocean/).
 
 # Getting Started
 
