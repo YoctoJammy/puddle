@@ -28,6 +28,9 @@ res/**/win/**/*.res
 ProjectSettings.plist
 ProjectSettings.plist.lock
 
+# MacOS files
+.DS_Store
+
 # default build directories
 ocean_build
 ocean_build_thirdparty
