@@ -6,6 +6,9 @@ bin_cmake
 data
 data/*
 
+# vim editor swap files
+*.swp
+
 # Visual Studio project files
 *.user
 *.suo
