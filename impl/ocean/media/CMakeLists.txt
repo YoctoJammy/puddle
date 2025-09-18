@@ -12,7 +12,7 @@ add_subdirectory(imageio)
 add_subdirectory(mediafoundation)
 add_subdirectory(openimagelibraries)
 add_subdirectory(special)
-add_subdirectory(usb)
+# add_subdirectory(usb)
 add_subdirectory(wic)
 
 if (MACOS OR ANDROID OR IOS OR LINUX OR WIN32)

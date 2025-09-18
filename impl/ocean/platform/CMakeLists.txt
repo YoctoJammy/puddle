@@ -12,7 +12,7 @@ add_subdirectory(linux)
 add_subdirectory(meta/quest)
 add_subdirectory(openxr)
 add_subdirectory(win)
-add_subdirectory(wxwidgets)
+# add_subdirectory(wxwidgets)
 
 if (MACOS OR ANDROID OR IOS OR LINUX OR WIN32)
 

@@ -5,8 +5,8 @@
 
 cmake_minimum_required(VERSION 3.26)
 
-add_subdirectory(sdl/assimp)
-add_subdirectory(sdl/obj)
+# add_subdirectory(sdl/assimp)
+# add_subdirectory(sdl/obj)
 add_subdirectory(sdx/x3d)
 
 if (MACOS OR ANDROID OR IOS OR LINUX OR WIN32)
