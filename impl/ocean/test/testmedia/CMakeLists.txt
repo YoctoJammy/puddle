@@ -130,11 +130,7 @@ if (ANDROID OR IOS OR LINUX OR MACOS OR WIN32)
         PUBLIC
             "${OCEAN_PREPROCESSOR_FLAGS}"
             "-DOCEAN_USE_GTEST"
-            "-DOCEAN_MEDIA_OIL_SUPPORT_GIF"
-            "-DOCEAN_MEDIA_OIL_SUPPORT_JPG"
             "-DOCEAN_MEDIA_OIL_SUPPORT_PNG"
-            "-DOCEAN_MEDIA_OIL_SUPPORT_TIF"
-            # "-DOCEAN_MEDIA_OIL_SUPPORT_WEBP"  # Not yet available
         )
 
     if (BUILD_SHARED_LIBS)

@@ -435,6 +435,8 @@ bool TestImageIO::testBmpImageEncodeDecode(const double testDuration)
 
 bool TestImageIO::testJpgImageEncodeDecode(const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_JPG
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "JPEG image encode/decode test:";
@@ -512,6 +514,11 @@ bool TestImageIO::testJpgImageEncodeDecode(const double testDuration)
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "JPEG image encode/decode test skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testHeicImageEncodeDecode(const double testDuration)
@@ -590,6 +597,8 @@ bool TestImageIO::testHeicImageEncodeDecode(const double testDuration)
 
 bool TestImageIO::testPngImageEncodeDecode(const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_PNG
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "PNG image encode/decode test:";
@@ -649,10 +658,17 @@ bool TestImageIO::testPngImageEncodeDecode(const double testDuration)
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "PNG image encode/decode test skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testTifImageEncodeDecode(const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_TIF
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "TIFF image encode/decode test:";
@@ -712,6 +728,11 @@ bool TestImageIO::testTifImageEncodeDecode(const double testDuration)
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "TIFF image encode/decode test skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testAnyImageEncodeDecode(const double testDuration)
@@ -1158,6 +1179,8 @@ bool TestImageIO::testBmpImageEncodeDecode(const unsigned int width, const unsig
 
 bool TestImageIO::testJpgImageEncodeDecode(const unsigned int width, const unsigned int height, const FrameType::PixelFormat pixelFormat, const FrameType::PixelOrigin pixelOrigin, const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_TIF
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "... for " << width << "x" << height << " image, with origin " << FrameType::translatePixelOrigin(pixelOrigin) << ":";
@@ -1274,6 +1297,11 @@ bool TestImageIO::testJpgImageEncodeDecode(const unsigned int width, const unsig
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "Validation: skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testHeicImageEncodeDecode(const unsigned int width, const unsigned int height, const FrameType::PixelFormat pixelFormat, const FrameType::PixelOrigin pixelOrigin, const double testDuration)
@@ -1398,6 +1426,8 @@ bool TestImageIO::testHeicImageEncodeDecode(const unsigned int width, const unsi
 
 bool TestImageIO::testPngImageEncodeDecode(const unsigned int width, const unsigned int height, const FrameType::PixelFormat pixelFormat, const FrameType::PixelOrigin pixelOrigin, const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_PNG
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "... for " << width << "x" << height << " image, with origin " << FrameType::translatePixelOrigin(pixelOrigin) << ":";
@@ -1566,10 +1596,17 @@ bool TestImageIO::testPngImageEncodeDecode(const unsigned int width, const unsig
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "Validation: skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testTifImageEncodeDecode(const unsigned int width, const unsigned int height, const FrameType::PixelFormat pixelFormat, const FrameType::PixelOrigin pixelOrigin, const double testDuration)
 {
+#ifdef OCEAN_MEDIA_OIL_SUPPORT_TIF
+
 	ocean_assert(testDuration > 0.0);
 
 	Log::info() << "... for " << width << "x" << height << " image, with origin " << FrameType::translatePixelOrigin(pixelOrigin) << ":";
@@ -1662,6 +1699,11 @@ bool TestImageIO::testTifImageEncodeDecode(const unsigned int width, const unsig
 	}
 
 	return allSucceeded;
+
+#else
+	Log::info() << "Validation: skipped.";
+	return true;
+#endif
 }
 
 bool TestImageIO::testBufferImageRecorder(const FrameType& frameType, const std::string& imageType, const double maximalAverageDifference)
