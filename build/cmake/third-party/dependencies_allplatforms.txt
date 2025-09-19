@@ -1,3 +1,4 @@
 googletest
+zlib
 eigen
 libpng
