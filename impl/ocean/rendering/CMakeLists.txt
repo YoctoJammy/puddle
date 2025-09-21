@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.26)
 
-add_subdirectory(glescenegraph)
+# add_subdirectory(glescenegraph)
 add_subdirectory(globalillumination)
 
 if (ANDROID OR IOS OR LINUX OR MACOS OR WIN32)
