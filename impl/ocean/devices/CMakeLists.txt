@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 3.26)
 
 add_subdirectory(android)
-add_subdirectory(arcore)
+# add_subdirectory(arcore)
 add_subdirectory(arkit)
 add_subdirectory(ios)
 add_subdirectory(mapbuilding)
